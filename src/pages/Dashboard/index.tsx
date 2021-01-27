@@ -59,8 +59,8 @@ const Dashboard: React.FC = () => {
         ...food,
       });
 
-      const updatedFoods = foods.map(foodToBeUpdated =>
-        foodToBeUpdated.id === editingFood.id ? { ...data } : foodToBeUpdated,
+      const updatedFoods = foods.map(dishes =>
+        dishes.id === editingFood.id ? { ...data } : dishes,
       );
 
       setFoods(updatedFoods);
