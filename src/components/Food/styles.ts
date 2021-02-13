@@ -9,7 +9,7 @@ export const Container = styled.div<IFoodPlateProps>`
   border-radius: 8px;
 
   header {
-    background: #ffb84d;
+    background: #b7d180;
     border-radius: 8px 8px 0px 0px;
     height: 192px;
     overflow: hidden;
@@ -17,8 +17,8 @@ export const Container = styled.div<IFoodPlateProps>`
     text-align: center;
 
     ${props =>
-      !props.available &&
-      css`
+    !props.available &&
+    css`
         opacity: 0.3;
       `};
 

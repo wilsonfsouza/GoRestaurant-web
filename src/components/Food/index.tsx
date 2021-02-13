@@ -47,13 +47,13 @@ const Food: React.FC<IProps> = ({
   return (
     <Container available={isAvailable}>
       <header>
-        <img src={food.image} alt={food.name} />
+        <img src={food.image} alt={food.name} height="200" width="100%" />
       </header>
       <section className="body">
         <h2>{food.name}</h2>
         <p>{food.description}</p>
         <p className="price">
-          R$ <b>{food.price}</b>
+          $ <b>{food.price}</b>
         </p>
       </section>
       <section className="footer">
@@ -78,7 +78,7 @@ const Food: React.FC<IProps> = ({
         </div>
 
         <div className="availability-container">
-          <p>{isAvailable ? 'Disponível' : 'Indisponível'}</p>
+          <p>{isAvailable ? 'Available' : 'Unavailable'}</p>
 
           <label htmlFor={`available-switch-${food.id}`} className="switch">
             <input
